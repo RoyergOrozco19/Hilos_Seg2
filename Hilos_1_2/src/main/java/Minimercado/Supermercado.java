@@ -1,4 +1,4 @@
-package Minimercado;
+package Entity.Minimercado;
 
 import java.util.ArrayList;
 import java.util.List;

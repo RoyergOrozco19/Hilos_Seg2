@@ -1,4 +1,4 @@
-package Minimercado;
+package Entity.Minimercado;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,12 +34,13 @@ import java.util.Random;
       try {
         System.out.println("Minimercado.Cliente " + id + " atendido en caja " + caja.getId() + " con artículos: " + cesta);
         Thread.sleep(tiempoProcesamiento);
-        caja.procesarVenta(cesta.size() * 10); // Suponiendo cada artículo cuesta 10
+        caja.procesarVenta(cesta.size() * 10);
       } catch (InterruptedException e) {
         e.printStackTrace();
       }
     }
   }
+
 
   class CajaRegistradora {
     private int id;
